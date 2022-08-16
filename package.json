@@ -49,5 +49,8 @@
     "/node_modules",
     "/build",
     "/public/build"
+  ],
+  "prettierIgnore": [
+    "/app/styles/app.css"
   ]
 }

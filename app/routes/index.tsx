@@ -46,7 +46,7 @@ export const action: ActionFunction = async ({ request }) => {
   if (_action === 'todo-item-update') {
     return await client.request<Mutation>(TodoUpdateDocument, {
       ...vars,
-      complete: Boolean(vars.complete)
+      complete: vars.complete === 'true'
     })
   }
 
